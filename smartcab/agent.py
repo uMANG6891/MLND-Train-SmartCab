@@ -23,7 +23,7 @@ class LearningAgent(Agent):
 		## TO DO ##
 		###########
 		# Set any additional class parameters as needed
-		self.t = 0
+		# self.t = 0
 
 
 	def reset(self, destination=None, testing=False):
@@ -44,7 +44,7 @@ class LearningAgent(Agent):
 			self.epsilon = 0.0
 			self.alpha = 0.0
 		else:
-			self.t += 1
+			# self.t += 1
 
 			# self.epsilon = math.pow(self.alpha, self.t)
 			# self.epsilon = math.exp(-1 * self.alpha * self.t)
@@ -213,7 +213,7 @@ def run():
 	# Flags:
 	#   tolerance  - epsilon tolerance before beginning testing, default is 0.05 
 	#   n_test     - discrete number of testing trials to perform, default is 0
-	sim.run(n_test=100, tolerance=0.0001)
+	sim.run(n_test=100, tolerance=0.001)
 
 
 if __name__ == '__main__':
